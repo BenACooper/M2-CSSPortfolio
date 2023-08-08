@@ -4,22 +4,6 @@
     --midblue: #63738D;
 }
 
-header, main {
-    border: solid 1px red;    
-}
-
-h1, nav, h2, section {
-    border: solid 1px green;
-}
-
-section aside {
-    border: solid 1px yellowgreen;
-}
-
-section .MainContent {
-    border: solid 1px violet
-}
-
 .HeaderOne {
     background-color: var(--darkblue);
     width: 100%;
@@ -65,4 +49,49 @@ h2 {
     font-size: x-large;
     position: absolute;
 
+}
+
+section {
+    margin: 20px 0px 20px 0px;
+}
+
+aside {
+    display: inline-block;
+    width: 20%;
+    text-align: right;
+    font-size: xx-large;
+    color: var(--midblue);
+}
+
+.MainContent {
+    display: inline-block;
+    width: 70%;
+    height: 100%;
+    border-left: solid 3px var(--midblue);
+    padding: 5px 0px 20px 20px;
+}
+
+.card,
+.firstcard {
+    border: solid 3px var(--lightblue);
+    display: inline-block;
+}
+
+.firstcard {
+    width: 100%;
+    height: 200px;
+}
+
+.card {
+    width: 25%;
+    height: 100px;
+}
+
+.contactinfo {
+    color: var(--midblue);
+    text-decoration: none;
+    padding: 5px;
+    border-bottom: 3px solid var(--midblue);
+    display: inline-block;
+    font-weight: bold;
 }
