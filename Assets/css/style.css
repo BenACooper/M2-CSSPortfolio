@@ -64,7 +64,11 @@ aside {
 }
 
 .MainContent {
-    display: inline-block;
+    border: solid 1px red;
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
     width: 70%;
     height: 100%;
     border-left: solid 3px var(--midblue);
@@ -74,7 +78,7 @@ aside {
 .card,
 .firstcard {
     border: solid 3px var(--lightblue);
-    display: inline-block;
+    /* display: inline-block; */
 }
 
 .firstcard {
@@ -83,7 +87,7 @@ aside {
 }
 
 .card {
-    width: 25%;
+    width: 30%;
     height: 100px;
 }
 
