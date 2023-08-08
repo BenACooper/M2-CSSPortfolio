@@ -4,35 +4,65 @@
     --midblue: #63738D;
 }
 
-body {
-    border: solid 2px red;
+header, main {
+    border: solid 1px red;    
 }
 
-
-header {
-    border: solid 2px red;
-}
-
-.HeaderOne h1, .HeaderOne nav {
-    border: solid 2px green;
-}
-
-.HeaderTwo h2 {
-    border: solid 2px green;
-}
-
-main {
-    border: solid 2px red;
-}
-
-section {
-    border: solid 2px green;
+h1, nav, h2, section {
+    border: solid 1px green;
 }
 
 section aside {
-    border: solid 2px yellowgreen;
+    border: solid 1px yellowgreen;
 }
 
 section .MainContent {
-    border: solid 2px violet
+    border: solid 1px violet
+}
+
+.HeaderOne {
+    background-color: var(--darkblue);
+    width: 100%;
+    height: 60px;
+}
+
+.HeaderTwo {
+    background-image: url(https://github.com/BenACooper/M2-CSSPortfolio/blob/main/Assets/images/code-wallpaper.jpg?raw=true);
+    width: 100%;
+    height: 120px;
+    position: relative;
+}
+
+h1 {
+    background: var(--lightblue);
+    color: var(--darkblue);
+    width: 20%;
+    font-size: xx-large;
+    text-align: right;
+    display: inline-block;
+}
+
+nav {
+    font-size: larger;
+    text-align: right;
+    width: 70%;
+    display: inline-block;
+}
+
+a {
+    color: var(--lightblue);
+    text-decoration: none;
+    padding: 5px;
+    border-bottom: 3px solid var(--lightblue);
+}
+
+h2 {
+    background-color: var(--lightblue);
+    color: var(--darkblue);
+    bottom: 10%;
+    right: 5%;
+    padding: 10px;
+    font-size: x-large;
+    position: absolute;
+
 }
