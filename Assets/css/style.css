@@ -1,0 +1,38 @@
+:root {
+    --darkblue: #31343D;
+    --lightblue: #92CCCD;
+    --midblue: #63738D;
+}
+
+body {
+    border: solid 2px red;
+}
+
+
+header {
+    border: solid 2px red;
+}
+
+.HeaderOne h1, .HeaderOne nav {
+    border: solid 2px green;
+}
+
+.HeaderTwo h2 {
+    border: solid 2px green;
+}
+
+main {
+    border: solid 2px red;
+}
+
+section {
+    border: solid 2px green;
+}
+
+section aside {
+    border: solid 2px yellowgreen;
+}
+
+section .MainContent {
+    border: solid 2px violet
+}
