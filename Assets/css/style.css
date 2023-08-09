@@ -4,18 +4,14 @@
     --midblue: #63738D;
 }
 
+body {
+    background-color: #EDEEF6;
+}
+
 .HeaderOne {
     background-color: var(--darkblue);
     width: 100%;
     height: 60px;
-    position: relative;
-
-}
-
-.HeaderTwo {
-    background-image: url(https://github.com/BenACooper/M2-CSSPortfolio/blob/main/Assets/images/code-wallpaper.jpg?raw=true);
-    width: 100%;
-    height: 120px;
     position: relative;
 }
 
@@ -30,7 +26,6 @@ h1 {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-
 }
 
 nav {
@@ -48,6 +43,23 @@ a {
     text-decoration: none;
     padding: 5px;
     border-bottom: 3px solid var(--lightblue);
+}
+
+.HeaderTwo {
+    background: var(--midblue);
+    width: 100%;
+    height: 120px;
+    position: relative;
+}
+
+#selfie {
+    width: 85px;
+    height: 103px;
+    left: 25%;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    position: absolute;
 }
 
 h2 {
@@ -85,11 +97,17 @@ aside {
     padding: 5px 0px 10px 20px;
 }
 
+#miniBio {
+    border: 1px solid red;
+    display: inline-block;
+}
+
 .card,
 .firstcard {
+    position: relative;
     border: solid 3px var(--lightblue);
     margin: 5px 0px 5px 0px;
-    /* display: inline-block; */
+    overflow: hidden;
 }
 
 .firstcard {
@@ -102,6 +120,20 @@ aside {
     height: 100px;
 }
 
+.caption {
+    position: absolute;
+    bottom: 15px;
+    padding: 3px;
+    background-color: var(--lightblue);
+    color: var(--darkblue);
+}
+
+.cardImage {
+    width: 100%;
+    /* height: 100%; */
+    background-size: cover;
+}
+
 .contactinfo {
     color: var(--midblue);
     text-decoration: none;
@@ -109,4 +141,57 @@ aside {
     border-bottom: 3px solid var(--midblue);
     display: inline-block;
     font-weight: bold;
+}
+
+/* Change header so <h1> and <nav> stacked vertically & centered on viewpprts narrower than 768px. */
+@media screen and (max-width: 767px) {
+    .HeaderOne {
+        height: 120px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    h1 {
+        border: 1px solid red;
+        background: var(--lightblue);
+        color: var(--darkblue);
+        padding: 10px;
+        width: 75%;
+        font-size: xx-large;
+        text-align: center;
+        display: block;
+        position: relative;
+        top: 0%;
+        transform: translateY(0%);
+        margin: auto;
+    }
+
+    nav {
+        border: 1px solid red;
+        font-size: larger;
+        text-align: center;
+        width: auto;
+        display: block;
+        position: relative;
+        top: 0%;
+        transform: translateY(-0%);
+    }
+
+    .card{
+        width: 100%;
+        display: block;
+    }
+
+    .cardImage {
+        width: 100%;
+        /* height: auto; */
+        background-size: cover;
+    }
+
+    aside {
+        border: solid 1px red;
+        display: block;
+        text-align: center;
+        width: 200px;
+    }
 }
