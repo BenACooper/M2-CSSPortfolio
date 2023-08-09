@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Challenge</title>
     <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="./Assets/css/style.css">
+    <title>Portfolio Challenge</title>
 </head>
 
 <body>
-    <header class="HeaderOne">
+    <header class="headerOne">
         <h1>Ben Cooper</h1>
         <nav>
             <a href="#AboutMe">About Me</a>
@@ -25,10 +25,10 @@
     </header>
 
     <main>
-        <section id="AboutMe">
-            <aside class="sideContent">
-                <h3>About Me</h3>
-            </aside>
+        <section id="AboutMe" class="panel">
+            <!-- <aside> -->
+            <h3>About Me</h3>
+            <!-- </aside> -->
             <div class="MainContent">
                 <p id="miniBio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi lacinia risus nec leo
                     ullamcorper pharetra. Maecenas pellentesque rhoncus arcu, ut viverra ante molestie et. Maecenas
@@ -41,46 +41,59 @@
             </div>
         </section>
 
-        <section id="Work">
-            <aside class="sideContent">
-                <h3>Work</h3>
-            </aside>
+        <section id="Work" class="panel">
+            <!-- <aside> -->
+            <h3>Work</h3>
+            <!-- </aside> -->
             <div class="MainContent">
-                <div class="firstcard">
-                    <img class="cardImage" src="./Assets/images/coding-brain.jpg">
-                    <div class="caption">
+                <!-- <a href="https://benacooper.github.io/M1-CodeRefactoringProject/" class="firstCard m1Challenge">
+                    <div class="">
+                        <img class="cardImage" src="./Assets/images/coding-brain.jpg">
                         <h4 class="captionHeader">M1 Challenge</h4>
-                        <p class="captionSubHeader">HTML-Git-CSS</p>
+                        <span>class="captionSubHeader">HTML-Git-CSS</span>
                     </div>
+                </a> -->
+                <div class="card cardFirst">
+                    <a href="https://benacooper.github.io/M1-CodeRefactoringProject/" class="firstCardImage">
+                        <div>
+                            <div class="caption">
+                                <h4 class="captionHeader">M1 Challenge</h4>
+                                <p class="captionSubHeader">HTML-Git-CSS</p>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-                <div class="card">
-                    <img class="cardImage" src="./Assets/images/m1-miniproject.png">
-                    <div class="caption">
-                        <h4 class="captionHeader">M1 MiniProject</h4>
-                        <p class="captionSubHeader">HTML-Git-CSS</p>
-                    </div>
+                <div class="card cardSecond">
+                    <a href="#">
+                        <div class="caption">
+                            <h4 class="captionHeader">M1 MiniProject</h4>
+                            <p class="captionSubHeader">HTML-Git-CSS</p>
+                        </div>
+                    </a>
                 </div>
-                <div class="card">
-                    <img class="cardImage" src="./Assets/images/prework.jpg">
-                    <div class="caption">
-                        <h4 class="captionHeader">Pre Work</h4>
-                        <p class="captionSubHeader">HTML-Git-CSS</p>
-                    </div>
+                <div class="card cardThird">
+                    <a href="#">
+                        <div class="caption">
+                            <h4 class="captionHeader">Pre Work</h4>
+                            <p class="captionSubHeader">HTML-Git-CSS</p>
+                        </div>
+                    </a>
                 </div>
-                <div class="card">
-                    <img class="cardImage" src="./Assets/images/m2MiniProject.png">
-                    <div class="caption">                    
-                        <h4 class="captionHeader">M2 MiniProject</h4>
-                        <p class="captionSubHeader">Advanced CSS</p>
-                    </div>
+                <div class="card cardFourth">
+                    <a href="#">
+                        <div class="caption">
+                            <h4 class="captionHeader">M2 MiniProject</h4>
+                            <p class="captionSubHeader">Advanced CSS</p>
+                        </div>
+                    </a>
                 </div>
             </div>
         </section>
 
-        <section id="ContactMe">
-            <aside class="sideContent">
-                <h3>Contact Me</h3>
-            </aside>
+        <section id="ContactMe" class="panel">
+            <!-- <aside> -->
+            <h3>Contact Me</h3>
+            <!-- </aside> -->
             <div class="MainContent">
                 <p class="contactinfo">555-555-5555</p>
                 <p class="contactinfo">email@emailprovider.com</p>

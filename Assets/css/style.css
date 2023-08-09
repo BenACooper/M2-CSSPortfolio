@@ -4,31 +4,41 @@
     --midblue: #63738D;
 }
 
-body {
-    background-color: #EDEEF6;
+* {
+    box-sizing: border-box;
 }
 
-.HeaderOne {
+body {
+    line-height: 1.1;
+    background-color: #EDEEF6;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    width: 95%;
+}
+
+.headerOne {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
     background-color: var(--darkblue);
-    width: 100%;
     height: 60px;
-    position: relative;
 }
 
 h1 {
     background: var(--lightblue);
     color: var(--darkblue);
     padding: 10px;
-    width: 33%;
     font-size: xx-large;
     text-align: right;
-    display: inline-block;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    width: 30%;
 }
 
-nav {
+/* nav {
     font-size: larger;
     text-align: right;
     width: 90%;
@@ -36,7 +46,7 @@ nav {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
-}
+} */
 
 a {
     color: var(--lightblue);
@@ -55,7 +65,7 @@ a {
 #selfie {
     width: 85px;
     height: 103px;
-    left: 25%;
+    left: 30px;
     top: 50%;
     transform: translateY(-50%);
     border-radius: 50%;
@@ -70,19 +80,32 @@ h2 {
     padding: 10px;
     font-size: x-large;
     position: absolute;
-
 }
 
 section {
     margin: 20px 0px 20px 0px;
+    border: solid 1px orange;
 }
 
-aside {
-    display: inline-block;
-    width: 20%;
+.panel {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+.cardImage {
+        
+}
+
+.panel h3 {
+    border: solid 1px red;
     text-align: right;
     font-size: xx-large;
     color: var(--midblue);
+    /* display: flex; */
 }
 
 .MainContent {
@@ -98,34 +121,48 @@ aside {
 }
 
 #miniBio {
-    border: 1px solid red;
     display: inline-block;
 }
 
-.card,
-.firstcard {
-    position: relative;
-    border: solid 3px var(--lightblue);
-    margin: 5px 0px 5px 0px;
-    overflow: hidden;
-}
-
-.firstcard {
-    width: 100%;
-    height: 200px;
-}
 
 .card {
     width: 30%;
     height: 100px;
+    position: relative;
+    border: solid 3px var(--lightblue);
+    margin: 5px 0px 5px 0px;
+    background-size: cover;
+    background-position: center;
 }
 
-.caption {
+.cardFirst {
+    width: 100%;
+    height: 200px;
+    background-image: url(../images/m1Challenge.jpg);
+}
+
+.cardSecond {
+    background-image: url(../images/m1-miniproject.png);
+}
+
+.cardThird {
+    background-image: url(../images/prework.jpg);
+}
+
+.cardFourth {
+    background-image: url(../images/m2MiniProject.png);
+}
+
+.cardFirst > div {
     position: absolute;
     bottom: 15px;
     padding: 3px;
     background-color: var(--lightblue);
     color: var(--darkblue);
+}
+
+.m1Challenge {
+    background-image: url("../images/m1-miniproject.png");
 }
 
 .cardImage {
@@ -144,7 +181,7 @@ aside {
 }
 
 /* Change header so <h1> and <nav> stacked vertically & centered on viewpprts narrower than 768px. */
-@media screen and (max-width: 767px) {
+/* @media screen and (max-width: 767px) {
     .HeaderOne {
         height: 120px;
         display: flex;
@@ -193,5 +230,5 @@ aside {
         display: block;
         text-align: center;
         width: 200px;
-    }
+    } */
 }
