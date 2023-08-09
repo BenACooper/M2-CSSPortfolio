@@ -4,19 +4,15 @@
     --midblue: #63738D;
 }
 
-* {
+/* * {
     box-sizing: border-box;
-}
+} */
 
 body {
     line-height: 1.1;
     background-color: #EDEEF6;
-    margin: 0;
-    padding: 0;
-}
-
-main {
-    width: 95%;
+    /* margin: 0;
+    padding: 0; */
 }
 
 .headerOne {
@@ -38,17 +34,7 @@ h1 {
     width: 30%;
 }
 
-/* nav {
-    font-size: larger;
-    text-align: right;
-    width: 90%;
-    display: inline-block;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-} */
-
-a {
+.navLink {
     color: var(--lightblue);
     text-decoration: none;
     padding: 5px;
@@ -82,6 +68,10 @@ h2 {
     position: absolute;
 }
 
+main {
+    margin: 0 5% 0 5%;
+}
+
 section {
     margin: 20px 0px 20px 0px;
     border: solid 1px orange;
@@ -94,10 +84,6 @@ section {
     justify-content: space-between;
     align-items: flex-start;
     justify-content: flex-end;
-}
-
-.cardImage {
-        
 }
 
 .panel h3 {
@@ -127,17 +113,22 @@ section {
 
 .card {
     width: 30%;
-    height: 100px;
+    height: 150px;
     position: relative;
     border: solid 3px var(--lightblue);
     margin: 5px 0px 5px 0px;
     background-size: cover;
     background-position: center;
+    opacity: 0.7;
 }
+
+.card:hover {
+    opacity: 1;
+  }
 
 .cardFirst {
     width: 100%;
-    height: 200px;
+    height: 300px;
     background-image: url(../images/m1Challenge.jpg);
 }
 
@@ -153,22 +144,20 @@ section {
     background-image: url(../images/m2MiniProject.png);
 }
 
-.cardFirst > div {
+/* .cardLink {
+    display: block;
+} */
+
+.caption {
     position: absolute;
-    bottom: 15px;
     padding: 3px;
-    background-color: var(--lightblue);
+    background-color: var(--lightblue);    
     color: var(--darkblue);
+    bottom: 15px;
 }
 
-.m1Challenge {
-    background-image: url("../images/m1-miniproject.png");
-}
-
-.cardImage {
-    width: 100%;
-    /* height: 100%; */
-    background-size: cover;
+.captionHeader, .captionSubheader {
+    text-decoration: none;
 }
 
 .contactinfo {
@@ -180,7 +169,6 @@ section {
     font-weight: bold;
 }
 
-/* Change header so <h1> and <nav> stacked vertically & centered on viewpprts narrower than 768px. */
 /* @media screen and (max-width: 767px) {
     .HeaderOne {
         height: 120px;
@@ -221,7 +209,7 @@ section {
 
     .cardImage {
         width: 100%;
-        /* height: auto; */
+        height: auto;
         background-size: cover;
     }
 
@@ -230,5 +218,5 @@ section {
         display: block;
         text-align: center;
         width: 200px;
-    } */
-}
+    }
+} */
