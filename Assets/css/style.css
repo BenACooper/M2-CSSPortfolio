@@ -74,7 +74,6 @@ main {
 
 section {
     margin: 20px 0px 20px 0px;
-    border: solid 1px orange;
 }
 
 .panel {
@@ -87,15 +86,13 @@ section {
 }
 
 .panel h3 {
-    border: solid 1px red;
     text-align: right;
     font-size: xx-large;
     color: var(--midblue);
-    /* display: flex; */
+    padding-right: 15px;
 }
 
-.MainContent {
-    border: solid 1px red;
+.mainContent {
     display: inline-flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -103,13 +100,12 @@ section {
     width: 70%;
     height: 100%;
     border-left: solid 3px var(--midblue);
-    padding: 5px 0px 10px 20px;
+    padding: 5px 0px 10px 15px;
 }
 
-#miniBio {
+.panel #miniBio {
     display: inline-block;
 }
-
 
 .card {
     width: 30%;
@@ -169,54 +165,38 @@ section {
     font-weight: bold;
 }
 
-/* @media screen and (max-width: 767px) {
-    .HeaderOne {
+@media screen and (max-width: 767px) {
+    .headerOne {
         height: 120px;
-        display: flex;
         flex-direction: column;
         justify-content: center;
     }
+
     h1 {
-        border: 1px solid red;
-        background: var(--lightblue);
-        color: var(--darkblue);
-        padding: 10px;
-        width: 75%;
-        font-size: xx-large;
+        width: 66%;
         text-align: center;
-        display: block;
-        position: relative;
-        top: 0%;
-        transform: translateY(0%);
-        margin: auto;
     }
 
     nav {
-        border: 1px solid red;
-        font-size: larger;
-        text-align: center;
-        width: auto;
-        display: block;
-        position: relative;
-        top: 0%;
-        transform: translateY(-0%);
+        padding-top: 5px;
     }
 
-    .card{
-        width: 100%;
+    .panel {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    h3 {
         display: block;
     }
 
-    .cardImage {
-        width: 100%;
-        height: auto;
-        background-size: cover;
+    .mainContent {
+        border-left: solid 0px var(--midblue);
+        border-top: solid 3px var(--midblue);
+        justify-content: center; /* I am confused about "justify-content: center" vs "align-items: center", is it the axis? */
     }
 
-    aside {
-        border: solid 1px red;
-        display: block;
-        text-align: center;
-        width: 200px;
+    .card {
+     min-width: 150px;
     }
-} */
+  }
