@@ -6,3 +6,7 @@ This is a starter portfolio. It incudes mainly a working navbar, responsive desi
 Repo: https://github.com/BenACooper/M2-CSSPortfolio
 
 Deployed: https://benacooper.github.io/M2-CSSPortfolio/
+
+![iPhone-viewport](https://github.com/BenACooper/M2-CSSPortfolio/assets/39800139/35661bc1-dde2-497e-9324-c3999689c4f1)
+
+![laptop-viewport](https://github.com/BenACooper/M2-CSSPortfolio/assets/39800139/1a8b6932-410d-4a7f-b2c7-052819cb3c9c)
